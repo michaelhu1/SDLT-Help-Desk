@@ -17,31 +17,52 @@
         </a>
 
         <a href = "Help.html" style= "text-decoration: none;">
-            <p style = "color: whitesmoke;  float:right; margin-right:  350px; margin-top: 40px;">Help</p>
+            <p style = "color: whitesmoke;  float:right; margin-right:  350px; margin-top: 40px; font-family: bahnschrift;">Help</p>
         </a>
         <a href = "Tutorials.html" style= "text-decoration: none;">
-            <p style = "color: whitesmoke;  float:right; margin-right: -125px; margin-top: 40px;">Tutorials</p>
+            <p style = "color: whitesmoke;  float:right; margin-right: -125px; margin-top: 40px;font-family: bahnschrift;">Tutorials</p>
         </a>
         <a href = "index.html" style= "text-decoration: none;">
-            <p style = "color: whitesmoke;  float:right; margin-right:  45px; margin-top: 40px;">Home</p>
+            <p style = "color: whitesmoke;  float:right; margin-right:  40px; margin-top: 40px;font-family: bahnschrift;">Home</p>
         </a>
         <a href = "https://www.hkis.edu.hk/login"style= "text-decoration: none;">
-            <p style = "color: whitesmoke;  float:right; margin-right: -315px; margin-top: 40px;">DragonNet</p>
+            <p style = "color: whitesmoke;  float:right; margin-right: -315px; margin-top: 40px;font-family: bahnschrift;">DragonNet</p>
         </a>
         <a href = "https://www.hkisclubs.com/"style= "text-decoration: none;">
-            <p style = "color: whitesmoke;  float:right; margin-right: -390px; margin-top: 40px;">Clubs</p>
+            <p style = "color: whitesmoke;  float:right; margin-right: -390px; margin-top: 40px;font-family: bahnschrift;">Clubs</p>
         </a>
         
    
     </header>
 
-    <section>
-        <h1 style= "font-size: 40px; margin-left: 300px; margin-top: 250px;">Welcome</h1>
- <!-- Add cycling images about website-->
+    <section style="background-color: rgba(0, 150, 170, 1); height: 650px;">
+        <div>
+        <h1 style= "font-size: 40px; float: left; margin-left: 300px; margin-top: 250px; font-family: bahnschrift;">Welcome</h1>
+        <img src="file:///C:/Users/micha/Desktop/Cycle/formpic.PNG" alt="rotating image" width="700" height="525" id="rotator" style = "float:left; margin-left: 225px; margin-top: 50px;"> 
+        <div>
 
+        <script type="text/javascript">
+            (function() {
+                var rotator = document.getElementById('rotator');  
+                var imageDir = 'file:///C:/Users/micha/Desktop/Cycle/';                         
+                var delayInSeconds = 20;                            
+        
+                var images = ['formpic.PNG', 'learnnew.PNG'];
+        
+                var num = 0;
+                var changeImage = function() {
+                    var len = images.length;
+                    rotator.src = imageDir + images[num++];
+                    if (num == len) {
+                        num = 0;
+                    }
+                };
+                setInterval(changeImage, delayInSeconds * 100);
+            })();
+            </script> 
     </section>
-    <hr style = "position:relative; margin: 200px; top: -250px;">
-    <section style="margin-top: -400px;">
+    <hr >
+    <section >
         <h1 class="welcome">Who are we?</h1>
         <hr style="width:10%">
         <p class="info">
@@ -57,7 +78,6 @@
             <br>
             Aside from fulfilling the responsibilities of their respective teams and contributing to initiatives, SDLT members are also expected to act as mentors and enthusiastic leaders within our community.
         </p>
-        <!-- Add graphic-->
         <img src = "file:///C:/Users/micha/Desktop/Untitled-1.png" class="aboutgraphic" alt="SDLT Graphic">
 
     </section>
@@ -69,13 +89,16 @@
     <nav>
         <a href="Help.html">
             <img src="file:///C:/Users/micha/Desktop/icon.png" class="testbox1" alt="Help">
-        
         </a>
-       
+       <p style = "float: left; margin-top: 350px; margin-left: -184px; font-family: bahnschrift;">
+           Ask for Help
+       </p>
         <a href="Tutorials.html">
-            <img src="file:///C:/Users/micha/Desktop/image0.jpg" class="testbox2" alt="Tutorials">
-                
+            <img src="file:///C:/Users/micha/Desktop/image0.jpg" class="testbox2" alt="Tutorials; z-index: -1 ">      
         </a>
+        <p style = "float: right; margin-top: 350px; margin-right: -210px; z-index: 1; font-family: bahnschrift;">
+            Learn Something New
+        </p>
  </nav>
 
     <footer>
@@ -86,6 +109,9 @@
 
 </body>
 </html>
+
+
+
 
 
 
